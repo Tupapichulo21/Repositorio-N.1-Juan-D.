@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="Formulario.css">
+</head>
+<body>
+<center>
+    <h1>Registro de Usuario</h1>
+
+<form action="Procesar.php" method="post"></form>
+<nav>
+<div>
+<label for="nombre">Nombre:</label><br>
+<input type="text" id="nombre" name="nombre" required></div>
+<br>
+
+<br>
+<label class="email" for="e-mail">E-mail:</label><br>
+<div class="emai">
+<input type="email" id="email" name="email" required>
+
+<br>
+<br>
+
+<label for="edad">Edad:</label><br>
+<input type="number" id="edad" name="edad" min="1" max="110"> 
+<br><br>
+
+<label for="password">Contraseña:</label><br>
+<input type="password" id="password" name="password" required>
+<br><br>
+<br>
+<label for="genero">Genero:</label>
+
+<select name="genero" id="genero">
+<option class="Mouse3" value="masculino">Masculino</option>
+<option value="femenino">Femenino</option>
+<option value="nobinary">Otro</option>
+</select>
+<br><br><br>
+
+<label for="Hobbies">Hobbies: </label>
+<br><br>
+<input type="checkbox" name="hobbies" id="musica" value="musica"> 
+<label for="musica">Musica</label>
+<input type="checkbox" name="hobbies" id="lectura" value="lectura">
+<label for="lectura">Lectura</label>
+<input type="checkbox" name="hobbies" id="deportes" value="deportes">
+<label for="deportes">Deporte</label>
+<input type="checkbox" name="hobbies" id="escritura" value="escritura">
+<label for="escritura">Escritura</label>
+
+
+<br><br>
+</center>
+<center><br>
+    <p class="pp">
+<label for="nacionalidad">Pais:</label>
+<br>
+<select name="nacionalidad" id="nacionalidad">
+<option value="colombia">Colombia</option>
+<option value="venezuela">Venezuela</option>
+<option value="ecuador">Ecuador</option>
+<option value="peru">Peru</option>
+<option value="chile">Chile</option>
+<option value="argentina">Argentina</option>
+<option value="paraguay">Paraguay</option>
+<option value="bolivia">Bolivia</option>
+</select></p>
+</center><br><br>
+
+<center>
+<label class="Primer" for="comentario">Comentarios:</label>
+<footer></nav>
+<textarea class="Textarea" name="comentario" id="comentario" cols="40" rows="7"></textarea>
+</center>
+</footer>
+<br>
+<center>
+<input class="mouse" type="submit" value="Enviar">
+<input class="mouse2" type="reset" value="Borrar">
+</center>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+body{background-color: rgb(255, 255, 255);
+}
+h1{
+    background-color: rgb(42, 54, 165);
+    font-size: 20px;
+    font-style: oblique;
+    margin: 10px;
+    padding: 20px;
+    color: aliceblue;
+}
+
+#Serj{
+    color: rgb(255, 255, 255);
+    background-color: rgb(63, 0, 0);
+font-size: 30px;
+font-style: oblique;
+padding: 67px;
+margin: 10px;
+}
+
+.Daron{
+background-color: rgb(39, 196, 0);
+font-size: 55px;
+font-style: initial;
+margin: 15px;
+padding: 30px;
+outline-color: yellow;
+border-color: aqua;
+}

@@ -1,0 +1,97 @@
+/* Contenedor de los botones (en este caso), barra negra donde estan ubicados los botones de inicio, descargas, etc. */
+.Container{
+    display: flex; /* altera el comportamiento de un elemento al renderizarse o dibujarse en una página. */
+    justify-content: center; /* se utiliza para definir cómo se distribuye el espacio entre los elementos de contenido */
+    align-items: center; /* Establece la aliniacion de los items (en este caso en el container) */
+    gap: 15px; /* Espacio entre filas y columnas en diseños de cuadrícula, flexbox, o multicolumna */               
+    padding: 20px; /* Establece el espacio entre el borde de un elemento y su contenido */
+    background-color: #000000; /* Color de fondo de la ubicacion de los botones */
+}
+/* Todo relacionado a los botones, animacion (transicion), bordes (bordes redondos), forma que toma el mouse encima del boton y colores de los mismos.  */
+.Pagina1 button {
+    padding: 10px 20px;
+    font-size: 16px; /* Tmaño de texto */
+    border:ridge rgb(0, 153, 255); /* Bordes que rodean al texto */
+    background-color: #007bff; /* Color de fondo */
+    color: white; /* Color del texto */
+    cursor: pointer; /* Apariencia del mouse encima de los botones */
+    border-radius: 25px; /* Redondes de bordes */
+    transition: 0.3s; /* Animacion de los botones */
+    font-weight: bold; /* Hace que el texto pase a estar en negrita */
+    margin-inline-start: 105px;
+}
+
+/* Hace que el boton cambie de color al pasar el mouse encima de el. */
+.Pagina1 button:hover {
+    background-color: #0056b3; /* Color que tomara el boton con el mouse encima. */
+}
+
+/* Texto dentro de los recuadros, (Lorem en este caso), bordes que lo rodean y color de fondo de recuadro. */
+h1 {
+    padding: 6px;
+    margin: 25px;
+    display: block;  /* Flex no es necesario para texto, en este caso */
+    background-color: azure; /* Color de fondo del texto dentro del recuadro, (blanco en este caso). */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify; 
+    font-size: 25px;
+    border: 2px solid black; /* Corrección: el border necesitaba estilo y color */
+}
+
+/* Estilos para los enlaces */
+/* Todo lo relacionado a los enlaces de la pagina ("a"), en este caso, las decoraciones y la posicion de los textos (inicio, descargas, quienes somos y que hacemos) de la pagina.  */
+a {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+/* Contenedor de los textos */
+/* Cosas como el color de fondo del cuadro de texto, cuadro que rodea el texto, etc. */
+div {
+    background-color: rgb(16, 104, 139);
+    text-decoration: double;
+    display: flex;
+    margin: 15px;
+    justify-content: space-around;
+    padding: 10px;
+    border: 2px solid black; /* Linea que rodea el Lorem (en este caso Lorem, puede ser cualquier texto) */
+}
+
+/* Estilos generales del body */
+/* Cosas como el color de fondo de la pagina en general (en este caso) */
+body {
+    background-color: rgb(44, 44, 44);
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el footer */
+/* Todo lo que esta en la parte de abajo (en este caso el copyright) */
+footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    display: block;
+    text-align: center; /* Alineación del texto */
+    font-weight: bold; /* se utiliza para definir el grosor o peso de las letras en un texto */
+}
+
+
+/* Diseño responsive para pantallas pequeñas */
+/* Todo lo que hace que la pagina cambie cuando se usa o se simula una pantalla pequeña */
+@media (max-width: 300px) {
+    nav {
+        background-color: rgb(0, 0, 0);
+        margin-left: 15px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .Pagina1 {
+        margin: 10px 0;
+    }
+}
